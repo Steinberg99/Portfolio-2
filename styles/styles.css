@@ -1,0 +1,14 @@
+:root {
+  --cadet-gray: #93a3b1;
+  --battleship-gray: #7c898b;
+  --dim-gray: #636564;
+  --dark-purple: #0d0221;
+  --federal-blue: #0f084b;
+}
+
+*,
+html {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}

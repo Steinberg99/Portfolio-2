@@ -9,6 +9,8 @@ const repo = (repo) => {
         <ul>
           ${repo.topics.map((topic) => `<li><p>${topic}</p></li>`).join(" ")}
         </ul>
+
+        <p>${repo.language}</p>
       </a>
     </li>
   `;

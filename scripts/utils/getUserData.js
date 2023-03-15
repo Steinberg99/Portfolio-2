@@ -14,6 +14,7 @@ const getUserData = async (username) => {
     repos,
     user: {
       avatar: rawUserData.avatar_url,
+      bio: rawUserData.bio ? rawUserData.bio : "",
       gitHubUrl: rawUserData.html_url,
       username,
     },
