@@ -12,6 +12,24 @@ const userPage = async (username) => {
 
   const markup = `
     ${user(userData.user)}
+
+    <div>
+      <h2>Repositories</h2>
+
+      ${repos(userData.repos)}
+    </div>
+
+    <div>
+      <h2>Followers</h2>
+
+      ${followers(userData.followers)}
+    </div>
+
+    <div>
+      <h2>Following</h2>
+
+      ${followers(userData.following)}
+    </div>
   `;
 
   app.innerHTML = markup;
