@@ -1,4 +1,5 @@
 import { followers } from "../components/followers/followers.js";
+import { search } from "../components/search/search.js";
 import { repos } from "../components/repos/repos.js";
 import { user } from "../components/user/user.js";
 import { getUserData } from "../utils/getUserData.js";
@@ -33,6 +34,7 @@ const userPage = async (username) => {
   `;
 
   app.innerHTML = markup;
+  app.insertBefore(search(), app.firstChild); // Add search bar
 };
 
 export { userPage };
