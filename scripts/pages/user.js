@@ -31,6 +31,8 @@ const userPage = async (username) => {
 
       ${followers(userData.following)}
     </div>
+
+    <h2>Search for other users</h2>
   `;
 
   app.innerHTML = markup;

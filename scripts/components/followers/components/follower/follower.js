@@ -4,7 +4,7 @@ const follower = (follower) => {
       <a href="#user/${follower.username}">
         <img src=${follower.avatar}/>
 
-        <p>${follower.username}</p>
+        <h3>${follower.username}</h3>
       </a>
     </li>
   `;
