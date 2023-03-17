@@ -10,6 +10,9 @@ const userPage = async (username) => {
   const userData = await getUserData(username);
 
   const markup = `
+    ${
+      userData !== null
+        ? `
     ${user(userData.user)}
 
     <div>
@@ -29,7 +32,9 @@ const userPage = async (username) => {
 
       ${followers(userData.following)}
     </div>
-
+    `
+        : `<p>User not found!</p>`
+    }
     <h2>Search for other users</h2>
   `;
 

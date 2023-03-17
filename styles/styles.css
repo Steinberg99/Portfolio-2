@@ -198,6 +198,12 @@ main > div:nth-child(4) > nav > ul > li > a > h3 {
   color: var(--magenta);
 }
 
+main > p {
+  margin-bottom: 0.75rem;
+
+  color: white;
+}
+
 main > form {
   display: flex;
   flex-direction: column;

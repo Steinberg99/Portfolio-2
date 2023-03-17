@@ -3,6 +3,9 @@ const baseUrl = "https://api.github.com";
 const getUserData = async (username) => {
   const url = `${baseUrl}/users/${username}`;
   const rawUserData = await fetchData(url);
+
+  if (rawUserData.message) return null;
+
   const followers = parseFollowerData(await fetchData(rawUserData.followers_url));
   const followingUrl = `${baseUrl}/users/${username}/following`;
   const following = parseFollowerData(await fetchData(followingUrl));
@@ -24,8 +27,13 @@ const getUserData = async (username) => {
 };
 
 const fetchData = async (url) => {
-  const response = await fetch(url);
-  return await response.json();
+  try {
+    const response = await fetch(url);
+    return await response.json();
+  } catch (error) {
+    console.log(error);
+    return null;
+  }
 };
 
 const parseFollowerData = (followers) => {
