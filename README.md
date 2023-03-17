@@ -20,7 +20,7 @@ Welcome! For the first project of the minor [Web Design and Development](https:/
 
 To install this project on your local machine clone the repository by running the following command:
 
-`git clone https://github.com/Steinberg99/portfolio-2`
+`git clone https://github.com/Steinberg99/lazy-portfolio`
 
 After running this command you should run `npm install` to install the necessary packages. Now run `npm start` to start the project.
 
