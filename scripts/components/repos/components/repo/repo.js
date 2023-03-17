@@ -11,7 +11,7 @@ const repo = (repo) => {
 
   const markup = `
     <li>
-      <a href=${repo.url}>
+      <a href=${repo.url} target="_blank">
         <h3>${repo.name}</h3>
 
         ${repo.description !== "" ? `<p>${repo.description}</p>` : ""}

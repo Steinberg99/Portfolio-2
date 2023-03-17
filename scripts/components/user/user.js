@@ -8,7 +8,7 @@ const user = (user) => {
 
         ${user.bio !== "" ? `<p>${user.bio}</p>` : ""}
 
-        <a href="${user.gitHubUrl}">GitHub url</a>
+        <a href="${user.gitHubUrl}" target="_blank">GitHub url</a>
       </div>
     </div>
   `;
