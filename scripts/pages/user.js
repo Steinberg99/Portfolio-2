@@ -9,8 +9,6 @@ const app = document.querySelector(".app");
 const userPage = async (username) => {
   const userData = await getUserData(username);
 
-  console.log(userData);
-
   const markup = `
     ${user(userData.user)}
 

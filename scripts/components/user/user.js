@@ -1,6 +1,4 @@
 const user = (user) => {
-  console.log(user);
-
   const markup = `
     <div>
       <img src=${user.avatar}/>

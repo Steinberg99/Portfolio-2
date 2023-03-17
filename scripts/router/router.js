@@ -8,8 +8,6 @@ if (window.location.hash === "") {
 const router = () => {
   routie({
     "user/:username": (username) => {
-      console.log(username);
-
       userPage(username);
     },
   });
