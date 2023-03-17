@@ -34,7 +34,7 @@ const userPage = async (username) => {
   `;
 
   app.innerHTML = markup;
-  app.insertBefore(search(), app.firstChild); // Add search bar
+  app.appendChild(search()); // Add search bar
 };
 
 export { userPage };

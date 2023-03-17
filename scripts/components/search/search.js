@@ -1,8 +1,9 @@
 const search = () => {
   const form = document.createElement("form");
   const input = document.createElement("input");
-  const submit = document.createElement("input");
+  const submit = document.createElement("button");
   submit.type = "submit";
+  submit.textContent = "Search";
 
   form.appendChild(input);
   form.appendChild(submit);
