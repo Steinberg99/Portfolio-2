@@ -6,6 +6,10 @@ This repository hosts a small webapp that displays information from GitHub profi
 
 ![Example profile](./img/example.png)
 
+## Another example profile
+
+![Another example profile](./img/example-2.png)
+
 ## Live Site
 
 View the live site [here](https://steinberg99.github.io/portfolio-2/).
